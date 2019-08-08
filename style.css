@@ -12,13 +12,14 @@ h1 {
 	margin-bottom: 30px;
 	font-size: 50px;
 	font-weight: 100;
+	margin-top: 0px;
 }
 p{
 	font-weight: 300;
 	letter-spacing: 0.5px;
 }
 strong {
-	font-weight: 400;
+	font-weight: bold;
 }
 img {
 	display: block;
@@ -222,7 +223,7 @@ header {
 }
 .top .content h1 {
 	font-size: 46px;
-	margin-top: 15%;
+	margin-top: 13%;
 	line-height: 1.4;
 }
 .top .content h2 {
@@ -234,7 +235,7 @@ header {
 }
 .top .content p {
 	font-size: 18px;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 	letter-spacing: 1px;
 }
 .top .content .button a {

@@ -8,7 +8,7 @@
     <!-- Template Title -->
     <title>HKU MSC(CS) Project - Image-based Dietary Assessment System in the Cloud</title>
 
-    <link rel="icon" href="" type="image/x-icon"/>
+    <link rel="icon" href="./index.html" type="image/x-icon"/>
 
     <!-- Bootstrap 3.3.0 stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,10 +48,10 @@
                 <div class="content">
                   <h1><strong>Image-based Dietary Assessment System</strong> in the Cloud</h1>
                   <h2>Group: Yang Xueya &amp; Zhang Zixuan (Professor C.L. Wang)</h2>
-                  <h3>Our aim is to develop an application that can detect and recognize multi Chinese dishes from a image and estimate their nutrition data as quickly and accurately as possible.</h3>
-                  <!--                  <div class="button" id="download-app1">-->
-<!--                    <a href="#download" class="btn btn-default btn-lg custom-btn">Download App</a>-->
-<!--                  </div>  end .button -->
+                  <p>A system that can quickly and accurately detect and recognize multi Chinese dishes from a image and estimate their nutrition data.</p>
+				<div class="button" id="download-app1">
+                    <a href="https://www.youtube.com/watch?v=KoFLNVlY084" class="btn btn-default btn-lg custom-btn"><i class="fa fa-youtube-play"></i>Demo Video</a>
+                  </div>  <!--end .button  -->
                 </div> <!-- end .content -->
               </div> <!-- end .top > .container> .row> .col-md-7 -->
 
@@ -65,13 +65,13 @@
                   </ol>
                   <div class="carousel-inner">
                     <div class="item active">
-                      <img src="images/finalresult.png" alt="">
+                      <img src="images/apphome.png" alt="">
                     </div>
                     <div class="item">
-                      <img src="images/analysis-meal.png" alt="">
+                      <img src="images/apppredict.png" alt="">
                     </div>
                     <div class="item">
-                      <img src="images/analysis-nutrition.png" alt="">
+                      <img src="images/appanalysis.png" alt="">
                     </div>
                   </div> <!-- end .carousel-inner -->
                 </div> <!-- end #carousel -->
@@ -107,7 +107,8 @@
                 <li class="active"><a href="#top">Home</a></li>
 				<li><a href="#aboutApp">Motivation</a></li>
                 <li><a href="#objective" class = "buttun">Objective</a></li>
-				<li><a href="#systemdesign">System Design</a></li>  
+				<li><a href="#systemdesign">System Design</a></li> 
+				<li><a href="#results">Results</a></li>   
                 <li><a href="#evaluation">Evaluation</a></li>
 				<li><a href="#download">schedual</a></li>
                 <li><a href="#team">contact us</a></li>
@@ -127,18 +128,22 @@
         <div class="aboutApp-one section-padding">
           <div class="container">
             <div class="row">
-              <div class="col-sm-5 col-md-5">
+              <div class="col-sm-6 col-md-offset-1 col-md-5">
                 <div class="app-image">
-                  <img src="images/motivation.png" alt="">
+					<br/>
+                  <img src="images/motivation2.png" alt="">
                 </div>
               </div>
-              <div class="col-sm-7 col-md-7">
+              <div class="col-sm-6 col-md-5">
                 <div class="content">
                   <h1>Motivation</h1>
-                  
-                <p><i class="fa fa-magic"></i> With the growing concern about keeping fit and healthy eating habits, the need to accurately measure personal daily diet becomes imperative. </p><p><i class="fa fa-times"></i> The mainstream diet record apps need users to manually enter the name of each dish per meal per day and then record the corresponding calories and nutrition data after searching. </p>
-                <p><i class="fa fa-calendar-o"></i> Automatic food identification and analysis is a challenging task because dishes are highly variable in appearance and color due to the cooking method and ingredient location, especially for Chinese food. </p><p><i class="fa fa-random"></i>  Although there are many research teams aiming to develop Chinese food recognition system, they mainly focus on single dish recognition, which is not practical enough in real life.</p>
-					</div>
+
+                  <p><em class="fa fa-magic"></em> People increasingly concern about keeping fit and healthy eating habits </p>
+				  <br/>
+                  <p><em class="fa fa-times"></em> Mainstream diet record apps require <em><strong>tedious operations </strong></em></p>
+                  <br/>
+				  <p><em class="fa fa-random"></em> Current food recognition systems focus on <strong><em>single dish</em></strong> recognition and <strong><em>simple western food</em></strong></p>
+                </div>
               </div>
             </div> <!-- .container> .row -->
           </div> <!-- .container -->
@@ -154,17 +159,17 @@
 
           <div class="header">
             <h1>Objective</h1>
-            <p>To build a food recognition and nutrition estimating system, which can</p>
 
           </div> <!-- end .container> .header -->
 		<div class="row"> <!-- row -->
                 
                 <div class="col-md-7 text-right">  <!-- Left Content Col 6 -->
+					<p class="text-center"><br/>To build a food recognition and nutrition estimating system, which can<br/></p><br/>
                     <div class="media service"> <!-- Service #1 -->
                         <div class="media-body">
 						 
                             <h4 class="media-heading">1.</h4>
-                            <p>Recognize multi-dishes in one picture</p>
+                            <p>Detect and recognize bowls and plates in one image in low latency </p>
                         </div>
                       <div class="media-right media-middle">
                             <i class="fa fa-users"></i>
@@ -172,10 +177,10 @@
                     </div><!-- End Service #1 -->
 
                     <div class="media service"> <!-- Service #2 -->
-                        <div class="media-body">
+                      <div class="media-body">
 						 
-                            <h4 class="media-heading">2.</h4>
-                            <p>Recognize Chinese food with good performance by integrating content(ingredients) information</p>
+                        <h4 class="media-heading">2.</h4>
+                            <p>Recognize Chinese food with good performance by integrating multi information</p>
                         </div> 
 						<div class="media-right media-middle">
                             <i class="fa fa-arrows"></i>
@@ -195,7 +200,7 @@
                 </div> <!-- End Left Content Col 6 -->
  		 <div class="col-md-5">
               <div class="featured-item-img">
-                <img src="images/japan.jpg" alt="">
+                <img src="images/objective.png" alt="">
               </div>
             </div>
                 
@@ -213,13 +218,20 @@
       <div class="screenshots section-padding">
         <div class="container">
 
-          <div class="header">
+          <div class="header" align="center">
             <h1>System Design</h1>
-			 <img src="images/dataflow.jpg" alt="item photo">
-			 <p align="left"><em class="fa fa-angle-double-right"></em> Use an object detection network to extract bounding boxes of food dishes from a multi-dishes photo and obtain a cropped image corresponding to each bounding box which contains only one dish. <br>
-			   <em class="fa fa-angle-double-right"></em> Provide the cropped dish images to the category recognition network and use Grabcut to segment food and reference(student card) from image to calculate volume one by one. <br>
-			   <em class="fa fa-angle-double-right"></em> The calories of the cropped dishes will be calculated based on the calculated volume and the corresponding data of the adjusted category in food and nutrition database. <br>
-			   <em class="fa fa-angle-double-right"></em> All fine-tuned types and intake of nutrient data will be saved and exported to the user’s phone, and diet suggestions will also be given on the basis of simple rules. </p>
+			 <img src="images/流程图.png" alt="item photo">
+			  <br>
+		    <p><em class="fa fa-star"></em> <strong>Multi-dish recognition</strong> 
+				<em class="fa fa-star"></em> <br>
+			   Detect each dishes by using YOLO-V3 before classification </p>
+			 <p><em class="fa fa-star"></em> <strong> Multi-task learning</strong> 
+				 <em class="fa fa-star"></em> <br>
+			   Fine-tune ResNet50 to a multi-task learning model for better classification </p>
+			 <p><em class="fa fa-star"></em> 
+				 <strong>Real-time Streaming, Detection, and Classification </strong> 
+				 <em class="fa fa-star"></em><br/>
+		    Utilize Kafka and Spark Streaming to enable real time detecting and classification </p>
           </div>
 		
 <!--          <div class="owl-carousel owl-theme">-->
@@ -248,41 +260,51 @@
 				  <li data-target="#carousel-testimonial" data-slide-to="3" class=""></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="item active">                    
+                  <div class="item active">
+					  <div align="center">
+						  <img src="images/yolo.jpg"  width=346px alt="">
+						  <p> </p> 
+					  </div>
                     <div class="content">
-                      <p>The object detection algorithms complete the input from the original image to the output of object position and category. In practice, we will try the Faster RCNN (fine-tune the pre-trained layers like VGG-16, Res-net) and YOLO (YOLOv3 and YOLOv3-tiny) to find the algorithm that have best performace related to our issue.</p> 
-					  <p> Dataset: UEC-FOOD-256, contains 256-kind food photos and each food photo has a bounding box indicating the location of the food items in the photo. This dataset includes more than 100 single-label images for each category, we further screened 112 types of foods that are common in China, to make training more practical.
-                      </p>
+                      <p>YOLOv3 is a very powerful detector. If use Chinese food data set directly to train an object detection model, the results could not be good. Because Chinese foods are always served on a plate or bowl, we finally decided to use YOLOv3 model that trained on COCO to detect dishware in food images. </p> 
                       <h3>Object Detection</h3>
             
                     </div> <!-- end .content -->
                   </div> <!-- end .item (1) -->
 
-                  <div class="item">  
+                  <div class="item"> 
+						<div align="center" margin-bottom=60px>
+						  <img src="images/multi-task.png"  width=553px alt="">
+						  <p> </p> 
+					  </div>
                     <div class="content">
-                      <p>In image classification, we will use ingredients label to further adjusted the category of cropped dish images. We will try the popular classification algorithms ( including VGGNet, Inception, ResNet and Xception) run them on the cloud. Finally, the algorithm with the best performance in terms of time and accuracy will be selected.</p>
-					  <p>Dataset:VireoFood-172, contains 110,241 food images from 172 typical Chinese food categories and annotated manually according to 353 ingredients. The ingredient label for each image is represented as a vector, each element in the vector denotes the occurrence of the ingredient.</p>
+                      <p>In our project, we proposed a multi-task learning method utilizing cuisine method recognition as an auxiliary task to gain better accuracy of food classification. </p>
+					  <p>Dataset: VireoFood-172, contains 110,241 food images from 172 typical Chinese food categories and annotated manually according to 353 ingredients. </p>
                       <h3>Image Classification</h3>
                     </div> <!-- end .content -->
                   </div> <!-- end .item (2) -->
 
                   <div class="item">
-					  <div align="center" margin-bottom=20px>
+					  <div align="center">
 						  <img src="images/grabcut.jpg"  width=400px alt="">
 						  <p> </p> 
 					  </div>
 					  
                     <div class="content">
-                      <p><br/>After the detection of objects with bounding boxes, we apply grabcut on each bbox to obtain an accurate food region.  </p>
+                      <p>we assume that the 3D shape of food is related to its category, and use the estimated size of food from the top view image to calculate the volume of food items.</p>
+						<p>  After the detection of objects with bounding boxes, we apply grabcut on each bbox to obtain an accurate food region.  </p>
                       <h3>Volume Estimation</h3>
                     </div> <!-- end .content -->
                   </div> <!-- end .item (3) -->
 					
 				<div class="item">
+					<div align="center">
+						  <img src="images/structure.png" width=518px alt="">
+						  <p> </p> 
+					  </div>
                     
                     <div class="content">
-                      <p>To make the training and testing faster, we deploy the whole project on the cloud: the provided Kubernetes cluster with at least 16 Docker containers, of which each has 8G memory and  2 vCPUs. We would deploy Hadoop and Spark and prepare other necessary environments on this k8s cluster.</p>
-					  <p>During the survey and previous study in COMP7305, we have found several distributed frameworks of Tensorflow, Keras on spark. These open-source project could help us adapt our single-node network to the spark cluster.</p>
+					  <p><br/>In our system, we use spark streaming to receive users’ images via Kafka and process them by RDD operations using spark. After processing, we send the results data back to users via Kafka, and also store the result data in Cassandra.</p>
                       <h3>Cloud Computing</h3>
 
                     </div> <!-- end .content -->
@@ -297,14 +319,36 @@
     </section>
     <!-- ====== End Methodology Section ====== -->
 
+	<!-- ====== Results Section ====== -->
+    <section id="results">
+      <div class="screenshots section-padding">
+        <div class="container">
+
+          <div class="header" align="center">
+            <h1>Results</h1>
+			 <img src="images/results.png" alt="item photo">
+		    
+          </div>
+		
+<!--          <div class="owl-carousel owl-theme">-->
+
+<!--            <div class="item">-->
+<!--              <img src="images/dataflow.jpg" alt="item photo">-->
+<!--            </div>  end item -->
+<!--          </div>  end owl carousel -->
+
+        </div> <!-- .container -->
+      </div> <!-- end .screenshots -->  
+    </section>
+    <!-- ====== End systemdesign Section ====== -->
 	  
     <!-- ====== evaluation Section ====== -->
     <section id="evaluation">
       <div class="price section-padding dark-bg">
         <div class="container"> <!-- container --> 
        <div class="header">
-            <h1>Evaluation plan</h1>
-            <p>According to our Objective, we proposed the following evaluation plan.</p>
+            <h1>Evaluation</h1>
+            
             <div class="underline"></div>
           </div> <!-- end .container> .header -->
 
@@ -314,9 +358,9 @@
 
                         <div class="col-md-4 nopadding"><!-- Price table #1 -->
                             <div class="panel panel-default price"> <!-- pricing table wrapper -->
-                                <div class="panel-heading">accuracy</div>
+                                <div class="panel-heading">classification accuracy</div>
                                 <div class="panel-body">
-                                    <h1><sup>></sup>80<small>%</small></h1> <!-- Plan Price -->
+                                    <h1><sup>></sup>76.74<small>%</small></h1> <!-- Plan Price -->
                                 </div>
 
                                 <!-- Plan Feature Lists 
@@ -338,7 +382,7 @@
                             <div class="panel panel-default price featured"><!-- pricing table wrapper -->
                                 <div class="panel-heading">Response time</div>
                                 <div class="panel-body">
-                                    <h1><sup><</sup>1<small>s</small></h1><!-- Plan Price -->
+                                    <h1><sup><</sup>2.5<small>s</small></h1><!-- Plan Price -->
                                 </div>
 
                                 <!-- Plan Feature Lists
@@ -358,9 +402,9 @@
 
                         <div class="col-md-4 nopadding"> <!-- Price table #3 -->
                             <div class="panel panel-default price"> <!-- pricing table wrapper -->
-                                <div class="panel-heading">Training time</div>
+                                <div class="panel-heading">Concurrency</div>
                                 <div class="panel-body">
-                                    <h1><sup><</sup>50<small>min</small></h1><!-- Plan Price -->
+                                    <h1><sup>></sup>3.3<small>img/s</small></h1><!-- Plan Price -->
                                 </div>
 
                                 <!-- Plan Feature Lists
@@ -443,49 +487,49 @@
 				  <td>Training object detection model</td>
 				  <td>June 10, 2019</td>
 				  <td>60</td>
-				  <td><i class="fa fa-spinner"></i></td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>Realizing user interface</td>
 				  <td>June 15, 2019</td>
 				  <td>30</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>Training classification model</td>
-				  <td>June 20, 2019</td>
+				  <td>June 27, 2019</td>
 				  <td>30</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>Volume calculating method</td>
 				  <td>June 25, 2019</td>
 				  <td>30</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>Midterm report</td>
-				  <td>June 30, 2019</td>
+				  <td>July 2, 2019</td>
 				  <td>10</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>Poster</td>
-				  <td>June / July 2019</td>
+				  <td>July 15, 2019</td>
 				  <td>10</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>System optimization</td>
 				  <td>July 15, 2019</td>
 				  <td>30</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				<tr>
 				  <td>Writing the final report</td>
 				  <td>July 31, 2019</td>
 				  <td>40</td>
-				  <td>&nbsp;</td>
+				  <td><i class="fa fa-check"></i></td>
 				</tr>
 				</tbody>
 				</table>
